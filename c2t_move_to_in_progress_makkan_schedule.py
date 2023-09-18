@@ -9,7 +9,7 @@ def list_items():
 
 
 def move_to_in_progress(issue_id):
-    cmd = 'gh project item-edit --id {0} --field-id "PVTSSF_lAHOBbg8Ns4AT02azgMqiD8" --project-id PVT_kwHOBbg8Ns4AVCc- --single-select-option-id "47fc9ee4"'.format(issue_id)
+    cmd = 'gh project item-edit --id {0} --field-id "PVTSSF_lAHOBbg8Ns4AVCc-zgNcWS4" --project-id PVT_kwHOBbg8Ns4AVCc- --single-select-option-id "47fc9ee4"'.format(issue_id)
     return run_cmd(cmd)
     
 
