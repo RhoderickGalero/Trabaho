@@ -28,7 +28,7 @@ def main():
     project_items = json.loads(list_items())
     #print (project_items)
     for item in project_items["items"]:
-        if item['content']['type'] == "Issue" and item['status'] == "Todo issue" and item['assignees'] is not None:
+        if item['assignees'] is not None and item['content']['type'] == "Issue" and item['status'] == "Todo issue":
             #move_to_in_progress(item['id'])
             print(f"Moved Issue {item['id']} to 'InProgress'")
             #break
