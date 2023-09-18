@@ -10,7 +10,7 @@ on:
   workflow_call:
 
 env:
-  repo: "Practice"
+  repo: "Trabaho"
 
 jobs:
   move_to_in_progress:
