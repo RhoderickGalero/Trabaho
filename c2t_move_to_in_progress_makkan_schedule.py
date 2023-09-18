@@ -28,10 +28,12 @@ def main():
     project_items = json.loads(list_items())
     #print (project_items)
     for item in project_items["items"]:
-        if item['content']['type'] == "Issue" and item['status'] == "Todo issue" and (item['assignees'] is not None or item['assignees'] not in item):
-            #move_to_in_progress(item['id'])
-            print(f"Moved Issue {item['id']} to 'InProgress'")
-            #break
+        if item['assignees'] not in item):
+            print(" No issue in assigned")
+            else if item['content']['type'] == "Issue" and item['status'] == "Todo issue" and item['assignees'] is not None:
+                #move_to_in_progress(item['id'])
+                print(f"Moved Issue {item['id']} to 'InProgress'")
+                #break
 
 
 if __name__ == "__main__":
