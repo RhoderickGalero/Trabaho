@@ -30,10 +30,10 @@ def main():
     for item in project_items["items"]:
         if item['assignees'] not in item:
             print(" No issue in assigned")
-            elif item['content']['type'] == "Issue" and item['status'] == "Todo issue" and item['assignees'] is not None:
-                #move_to_in_progress(item['id'])
-                print(f"Moved Issue {item['id']} to 'InProgress'")
-                #break
+        elif item['content']['type'] == "Issue" and item['status'] == "Todo issue" and item['assignees'] is not None:
+            #move_to_in_progress(item['id'])
+            print(f"Moved Issue {item['id']} to 'InProgress'")
+            #break
 
 
 if __name__ == "__main__":
