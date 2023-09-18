@@ -1,0 +1,26 @@
+name: Move Issues to In Progress on schedule
+
+permissions: write-all
+
+on:
+  schedule:
+    - cron: "* * * * *"
+
+jobs:
+  move_to_in_progress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+          
+      - name: Move Issues to In Progress
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          #ISSUE_NR: ${{ github.event.issue.number }}
+        run: python c2t_move_to_in_progress_makkan_schedule.py
