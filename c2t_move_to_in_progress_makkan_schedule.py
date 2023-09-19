@@ -33,7 +33,7 @@ def main():
             #move_to_in_progress(item['id'])
             print(f"{item['id']} will be Move to 'InProgress issue'")
         else:
-             print("{item['id']} Issue is not assigned")
+             print(f"{item['title']} Issue is not assigned")
             #break
 
 
