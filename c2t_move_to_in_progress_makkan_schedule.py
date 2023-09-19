@@ -4,7 +4,7 @@ import os
 
 
 def list_items():
-    cmd = 'gh project item-list 8 --owner RhoderickGalero --format json'
+    cmd = 'gh project item-list 8 -L 200 --owner RhoderickGalero --format json'
     return run_cmd(cmd)
 
 
