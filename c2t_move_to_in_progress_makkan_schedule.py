@@ -26,11 +26,11 @@ def run_cmd(cmd):
 def main():
     #issue_nr = int(os.getenv("ISSUE_NR"))
     project_items = json.loads(list_items())
-    print (project_items)
+    #print (project_items)
     for item in project_items["items"]:
         if 'assignees' in item:
            if item['content']['type'] == "Issue" and item['status'] == "Todo issue" and item['assignees'] is not None:
-            #move_to_in_progress(item['id'])
+            move_to_in_progress(item['id'])
             print(f"Moved Issue {item['id']} to 'InProgress issue'")
         else:
              print(" Issue is not assigned")
