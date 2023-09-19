@@ -2,9 +2,10 @@ name: Move Issues to In Progress on schedule
 
 permissions: write-all
 
-on:
-  schedule:
-    - cron: "* */12 * * *"
+on: [push]
+#on:
+  #schedule:
+    #- cron: "* */12 * * *"
 
 jobs:
   move_to_in_progress:
