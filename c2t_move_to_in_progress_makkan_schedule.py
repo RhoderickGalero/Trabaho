@@ -31,7 +31,7 @@ def main():
         if 'assignees' in item:
            if item['content']['type'] == "Issue" and item['status'] == "Todo issue" and item['assignees'] is not None:
             move_to_in_progress(item['id'])
-            print(f"Moved Issue {item['id']} to 'InProgress issue'")
+            print(f"{item['id']} will be Move to 'InProgress issue'")
         else:
              print(" Issue is not assigned")
             #break
