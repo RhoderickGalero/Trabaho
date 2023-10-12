@@ -32,10 +32,10 @@ def main():
     print (project_items)
     for item in project_items["items"]:
         if 'assignees' in item:
-           if item['content']['type'] == "Issue" and item['status'] == "Todo issue" and item['assignees'] is not None:
+           if item['content']['type'] == 'Issue' and item['status'] == 'Todo issue' and item['assignees'] is not None:
             #move_to_in_progress(item['id'])
             print(f"{item['title']} will be Move to 'In Progress issue'")
-           elif  item['assignees'] is None and item['content']['type'] == "Issue" and item['status'] == "In Progress issue":
+           elif  item['assignees'] is None and item['content']['type'] == 'Issue' and item['status'] == 'In Progress issue':
             #move_back_to_Todo(item['id'])
             print(f"{item['title']} will be Move back to 'To do issue'")   
         else:
