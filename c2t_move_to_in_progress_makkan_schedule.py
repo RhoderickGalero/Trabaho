@@ -35,9 +35,9 @@ def main():
            if item['content']['type'] == 'Issue' and item['status'] == 'Todo issue' and item['assignees'] is not None:
             #move_to_in_progress(item['id'])
             print(f"{item['title']} will be Move to 'In Progress issue'")
-           elif  item['assignees'] is None and item['content']['type'] == 'Issue' and item['status'] == 'In Progress issue':
+        elif item['content']['type'] == 'Issue' and item['status'] == 'In Progress issue':
             #move_back_to_Todo(item['id'])
-            print(f"{item['title']} will be Move back to 'To do issue'")   
+            print(f"{item['title']} will be Move back to 'To do issue'") 
         else:
              print(f"{item['title']} Issue is not assigned")
             #break
