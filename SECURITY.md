@@ -11,4 +11,4 @@ Only the latest release version of Trabaho is supported by security updates.
 
 ## Reporting a Vulnerability
 
-If you find a vulnerability in Trabahoo, please report it as a security vulnerability on GitHub https://github.com/RhoderickGalero/Trabaho/security/advisories/new
+If you find a vulnerability in Trabahoo, please report it as a security vulnerability on GitHub [https://github.com/RhoderickGalero/Trabaho/security/advisories/new](https://github.com/RhoderickGalero/Trabaho/security/advisories/new)https://github.com/RhoderickGalero/Trabaho/security/advisories/new
