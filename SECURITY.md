@@ -2,18 +2,13 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Only the latest release version of CodeChecker is supported by security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version         | Supported            |
+| --------------- | -------------------- |
+| Latest release  | :white_check_mark:   |
+| early release   | :x:                  |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
-
-Please report (suspected) security vulnerabilities to cassandra-dev@mailman.lmera.ericsson.se. You will receive a response from us within 48 hours. If the issue is confirmed, we will release a patch as soon as possible depending on complexity but historically within a few days.
+If you find a vulnerability in Trabahoo, please report it as a security vulnerability on GitHub https://github.com/RhoderickGalero/Trabaho/security/advisories/new
